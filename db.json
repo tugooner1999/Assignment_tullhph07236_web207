@@ -1,0 +1,93 @@
+{
+  "category": [
+    {
+      "id": "1",
+      "name": "Bánh kẹo"
+    },
+    {
+      "id": "2",
+      "name": "Đồ uống"
+    },
+    {
+      "id": "3",
+      "name": "Đồ dùng sinh hoạt"
+    },
+    {
+      "id": "31241402141332004212232",
+      "name": "Đồ chơi "
+    },
+    {
+      "id": "3321322220101104043434",
+      "name": "Bia"
+    },
+    {
+      "id": "13421204033042214131443",
+      "name": "Bỉm tã trẻ em"
+    },
+    {
+      "id": "20112122213414240220421",
+      "name": "Gia vị"
+    },
+    {
+      "id": "022433114122000313333101",
+      "name": "Dụng cụ cơ khí"
+    },
+    {
+      "id": "132004203104420143233322",
+      "name": "Đồ trang trí"
+    },
+    {
+      "id": "32333003441311023244203",
+      "name": "Điện tử - Điện lạnh"
+    },
+    {
+      "id": "043142021102213213012212",
+      "name": "Mỹ phẩm"
+    },
+    {
+      "id": "013401034432201030423",
+      "name": "Đồ ăn nhanh"
+    },
+    {
+      "id": "203110213030103404140143",
+      "name": "Nội thất"
+    }
+  ],
+  "products": [
+    {
+      "id": "211000133103330312100102",
+      "name": "Khủng long Tyranosaures-Rex",
+      "price": "100000",
+      "category": "Đồ chơi",
+      "description": "Chất liệu làm từ nilon giúp trẻ nhỏ an toàn với môi trường"
+    },
+    {
+      "id": "23233222101130332210302303",
+      "name": "Kem đánh răng PS",
+      "price": "32000",
+      "category": "Đồ dùng sinh hoạt",
+      "description": "Kem đánh răng làm từ hoạt chất thiên nhiên giúp răng trắng sáng\n\n"
+    },
+    {
+      "id": "2310010021111033321310232",
+      "name": "Loa máy tính ",
+      "price": "850000",
+      "category": "Điện tử - Điện lạnh",
+      "description": "Loa máy tính "
+    },
+    {
+      "id": "23202030030110313321010031",
+      "name": "Tranh treo tường",
+      "price": "200000",
+      "category": "Đồ trang trí",
+      "description": "Tranh làm từ chất liệu gỗ tự nhiên"
+    },
+    {
+      "id": "23311102030330300230003223",
+      "name": "Tương ớt Chin-su",
+      "price": "10000",
+      "category": "Gia vị",
+      "description": "Tương ớt chinsu"
+    }
+  ]
+}
