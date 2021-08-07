@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+
 
 const DashBoard = () => {
     return (
@@ -23,7 +24,7 @@ const DashBoard = () => {
                 </div>
                 <div className="container-fluid">
                 <div className="App">
-                    <h1>Chào mừng đến trang quản trị</h1>
+                    <h1>Chào mừng các bạn đến với trang quản trị</h1>
                 </div>
                 </div>
                 <footer className="footer text-center"> 2021 © Ample Admin brought to you by <a href="https://www.wrappixel.com/">wrappixel.com</a>

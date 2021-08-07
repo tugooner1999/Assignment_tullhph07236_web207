@@ -1,93 +1,172 @@
 {
   "category": [
     {
-      "id": "1",
-      "name": "Bánh kẹo"
-    },
-    {
       "id": "2",
-      "name": "Đồ uống"
+      "name": "Điện thoại"
     },
     {
       "id": "3",
-      "name": "Đồ dùng sinh hoạt"
+      "name": "Laptop"
     },
     {
       "id": "31241402141332004212232",
-      "name": "Đồ chơi "
+      "name": "Ipad"
     },
     {
       "id": "3321322220101104043434",
-      "name": "Bia"
+      "name": "Loa"
     },
     {
       "id": "13421204033042214131443",
-      "name": "Bỉm tã trẻ em"
+      "name": "Tai nghe"
     },
     {
-      "id": "20112122213414240220421",
-      "name": "Gia vị"
+      "id": "41104042203132230444234",
+      "name": "Đồng hồ"
     },
     {
-      "id": "022433114122000313333101",
-      "name": "Dụng cụ cơ khí"
+      "id": "021104014202344230331121",
+      "name": "Máy tính bàn"
     },
     {
-      "id": "132004203104420143233322",
-      "name": "Đồ trang trí"
+      "id": "202043440221031021330213",
+      "name": "Bàn phím"
     },
     {
-      "id": "32333003441311023244203",
-      "name": "Điện tử - Điện lạnh"
+      "id": "3203341120421011143204",
+      "name": "Chuột"
     },
     {
-      "id": "043142021102213213012212",
-      "name": "Mỹ phẩm"
+      "id": "220010230441233102000143",
+      "name": "Tivi"
     },
     {
-      "id": "013401034432201030423",
-      "name": "Đồ ăn nhanh"
-    },
-    {
-      "id": "203110213030103404140143",
-      "name": "Nội thất"
+      "id": "12013011423121143221212",
+      "name": "Camera"
     }
   ],
   "products": [
     {
-      "id": "211000133103330312100102",
-      "name": "Khủng long Tyranosaures-Rex",
-      "price": "100000",
-      "category": "Đồ chơi",
-      "description": "Chất liệu làm từ nilon giúp trẻ nhỏ an toàn với môi trường"
-    },
-    {
-      "id": "23233222101130332210302303",
-      "name": "Kem đánh răng PS",
-      "price": "32000",
-      "category": "Đồ dùng sinh hoạt",
-      "description": "Kem đánh răng làm từ hoạt chất thiên nhiên giúp răng trắng sáng\n\n"
-    },
-    {
       "id": "2310010021111033321310232",
       "name": "Loa máy tính ",
-      "price": "850000",
-      "category": "Điện tử - Điện lạnh",
+      "price": "1.500.000",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-13bce.appspot.com/o/images%2F10.jpg?alt=media&token=ce65c5c5-47d2-48ec-93ee-3a99af6eb3f2",
+      "category": "Ipad",
       "description": "Loa máy tính "
     },
     {
-      "id": "23202030030110313321010031",
-      "name": "Tranh treo tường",
-      "price": "200000",
-      "category": "Đồ trang trí",
-      "description": "Tranh làm từ chất liệu gỗ tự nhiên"
+      "id": "22332002221031000122100003",
+      "name": "Xiaomi Redmi Note 8",
+      "price": "4.500.000",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-13bce.appspot.com/o/images%2F8.jpg?alt=media&token=36dfc4dc-2e73-4bab-a3e4-8e7bf2dfaf63",
+      "category": "Điện thoại",
+      "description": "điện thoại xịn"
     },
     {
-      "id": "23311102030330300230003223",
-      "name": "Tương ớt Chin-su",
-      "price": "10000",
-      "category": "Gia vị",
-      "description": "Tương ớt chinsu"
+      "id": "23112212311310011023221332",
+      "name": "Tai nghe Bluetooth",
+      "price": "800.000.000",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-13bce.appspot.com/o/images%2F6.jpg?alt=media&token=bd1b17e4-1785-4847-b0ea-0047beb5b27e",
+      "category": "Tai nghe",
+      "description": "tai nghe xịn"
+    },
+    {
+      "id": "20133133111321011212210333",
+      "name": "Ipad thông minh",
+      "price": "20.000.000",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-13bce.appspot.com/o/images%2F7.jpg?alt=media&token=c74e21e1-ec13-4f93-80c8-53f6f2185fbf",
+      "category": "Ipad",
+      "description": "ipad đẹp"
+    },
+    {
+      "id": "0040312440200443302404102",
+      "name": "Loa máy tính Golden",
+      "price": "900.000.000",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-13bce.appspot.com/o/images%2F13.jpg?alt=media&token=d35b4ef7-12be-4e94-9a72-f7b47083c021",
+      "category": "Loa",
+      "description": "lao đẹp"
+    },
+    {
+      "id": "32312120034121440301",
+      "name": "Camera 4K",
+      "price": "8000.000",
+      "category": "Camera",
+      "description": "camera chất lượng 4K mới",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-13bce.appspot.com/o/images%2F3.jpg?alt=media&token=c39177bd-a0a7-40b2-a1a9-98c7883d1107"
+    },
+    {
+      "id": "12141242134223042101404",
+      "name": "Đồng hồ Apple Watch",
+      "price": "10.000.000",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-13bce.appspot.com/o/images%2F2.jpg?alt=media&token=a1b2b520-cd4a-47cc-9656-d809403faa3a",
+      "category": "Đồng hồ",
+      "description": "đồng hồ đẹp\n"
+    },
+    {
+      "id": "1241333030040204203434",
+      "name": "Tai nghe gamming",
+      "price": "1.000.000",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-13bce.appspot.com/o/images%2F5.jpg?alt=media&token=93d87f9c-e743-46bb-b318-b3c66f135684",
+      "category": "Tai nghe",
+      "description": "tai nghe đẹp"
+    },
+    {
+      "id": "44020233313221431331234",
+      "name": "Máy ảnh Cartoon 4K",
+      "price": "5.200.000",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-13bce.appspot.com/o/images%2F9.jpg?alt=media&token=663278e2-2c79-496b-ac53-3509b9ab8ec0",
+      "category": "Loa",
+      "description": "máy ảnh đẹp"
+    },
+    {
+      "id": "010244330343213221421134",
+      "name": "Đồng hồ điện tử",
+      "price": "2.500.000",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-13bce.appspot.com/o/images%2F11.jpg?alt=media&token=5fe8e897-7118-438b-8fe1-88b7acc36372",
+      "category": "Camera",
+      "description": "đồng hồ đẹp"
+    },
+    {
+      "id": "44000002410030433212014",
+      "name": "Tay cầm chơi game",
+      "price": "7500.000",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-13bce.appspot.com/o/images%2F15.jpg?alt=media&token=e4e1e87f-b996-4168-84f4-dc412e6c1600",
+      "category": "Bàn phím",
+      "description": "tay cầm game"
+    },
+    {
+      "id": "4314141004203344233243",
+      "name": "Camera treo tường",
+      "price": "2.000.000",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-13bce.appspot.com/o/images%2F1.jpg?alt=media&token=7ecb8476-e269-451d-915c-e68a6c5f3975",
+      "category": "Camera",
+      "description": "cam đẹp quá"
+    }
+  ],
+  "users": [
+    {
+      "email": "lehuutu99@gmail.com",
+      "password": "$2a$10$G0kiTGhB8lkoLAm0jhLiWeRnNVZogJPS.6xJIBR3zd8URKy0.hsoa",
+      "name": "Lê Hữu Tú",
+      "phone": "036736142666",
+      "address": "Hoàng Mai",
+      "id": 1
+    },
+    {
+      "email": "thanhdungtmu@gmail.com",
+      "password": "$2a$10$wAjvAcAGIblZbmpH5M26.OJ4kiRkFj5zpggfhiW5UCtmh89/wGNHG",
+      "name": "Nguyễn Thanh Dung",
+      "phone": "036736142666",
+      "address": "Thái Bình",
+      "id": 2
+    },
+    {
+      "email": "sss@gmail.com",
+      "password": "$2a$10$7VmXapsVUF4boGNWwHrUNutrFdBviuJ6IJ/aArelelt6edsK28h2W",
+      "name": "Là Văn Ho",
+      "phone": "0968676249",
+      "address": "Hoàng Mai",
+      "id": 3
     }
   ]
 }

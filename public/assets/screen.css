@@ -1,0 +1,128 @@
+.screen-wrapper{
+    background-image: url('../assets/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+    padding: 40px 10px;
+}
+
+.screen-wrapper .auth-wrapper{
+    background: #fff ;
+    border-radius: 10px;
+    padding: 10px 10px;
+    padding: 20px 30px;
+}
+
+.screen-wrapper form input{
+    border-radius:5px;
+}
+
+
+.screen-wrapper .box-auth{
+    margin: 0 auto;
+    width:40%;
+    height: 150px;
+    margin-top: 100px;
+}
+
+.screen-wrapper .box-auth .box-admin {
+    background:#97ff83;
+    height: 100px;
+    width: 45%;
+    padding: 20px 55px;
+    border: 1px solid #666;
+    border-radius:10px;
+  
+}
+
+.screen-wrapper .box-auth .box-admin:hover {
+    background:pink;
+    transition: 0.3 ease-in-out;
+}
+
+
+.screen-wrapper .box-auth .box-admin a{
+    color:#000;
+    font-size: 20px;
+}
+
+.screen-wrapper .box-auth .box-admin a:hover{
+    color:#fff;
+}
+
+.screen-wrapper .box-auth .box-admin a:hover{
+    color:#000;
+    font-size: 20px;
+}
+
+.screen-wrapper .box-auth .box-website {
+    background:#97ff83;
+    padding: 20px 55px;
+    border: 1px solid #666;
+    border-radius:10px;
+    width: 45%;
+    margin-left: 40px;
+
+}
+
+.screen-wrapper .box-auth .box-website:hover{
+    background:pink;
+
+}
+
+.screen-wrapper .box-auth .box-website a{
+    color:#000;
+    font-size: 20px;
+}
+
+.screen-wrapper .welcome{
+    margin:0 auto;
+    text-align: center;
+    margin-top:60px;
+    color:#fff;
+}
+
+.screen-wrapper .welcome h1{
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+
+
+/* pagination admin */
+.paginationBttns{
+    width:95%;
+    height:40px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.paginationBttns a {
+    padding: 3px 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(47, 50, 62);
+    color: rgb(47, 50, 62);
+    cursor: pointer;
+}
+
+.paginationBttns a:hover{
+    color: #fff!important;
+    background:rgb(47, 50, 62);
+}
+
+.paginationActive a{
+    color: #fff!important;
+    background:rgb(47, 50, 62);
+}
+
+.data-products-tbody tr {
+    background:#fff;
+}
+
+
+.best-sell-slider .wrapp-list-sell-product .list-product{
+    float:left;
+}

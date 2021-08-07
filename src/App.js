@@ -5,11 +5,17 @@ import Routes from "./routes";
 import { addCate, getAllCate, removeCate, updateCate } from "./api/categoryAPI";
 import swal from "sweetalert";
 import { addProduct, getAllProduct, removeProduct, updateProduct } from './api/productAPI';
+import { get_allUser, remove_user } from './api/userAPI';
+import { set } from 'react-hook-form';
 
 function App() {
   const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
+  const [users, setUsers] = useState([]);
 
+  // const [loading, setLoading] = useState(false);
+  // const [currentPage, setCurrentPage] = useState(1);
+  // const [postsPerPage] = useState(5);
 
   // hiển thị danh mục từ API
   useEffect(() => {
@@ -91,6 +97,7 @@ function App() {
   }
 
 
+
   // hiển thị danh sách sản phẩm
   useEffect(() => {
     const getProduct = async () => {
@@ -102,7 +109,8 @@ function App() {
       }
     }
     getProduct();
-  }, [])
+  }, []);
+
 
   // thêm sản phẩm
   const onHandleAddProduct = async (item) => {
@@ -170,9 +178,58 @@ function App() {
     }
   }
 
+
+
+
+
+// hien thi sanh sach users
+useEffect(() => {
+   const getUser = async () => {
+    const { data } = await get_allUser();
+    setUsers(data);
+  }
+  getUser();
+}, []);
+
+
+// xóa users
+const onHandleRemoveUser = (id) =>{
+  swal({
+    title: "Bạn có chắc muốn xóa ? ",
+    text: "Nếu xóa bạn có thể mất vĩnh viễn dữ liệu",
+    icon: "warning",
+    buttons: true,
+    dangerMode: true,
+  })
+    .then((willDelete) => {
+      if (willDelete) {
+        swal({
+          title: "Xóa thành công :3",
+          text: "Dữ liệu đang được cập nhật",
+          icon: "success",
+          timer: 2000
+        })
+        remove_user(id);
+        const newUser = users.filter((list) => list.id !== id);
+        setUsers(newUser);
+      }
+      else {
+        swal({
+          title: "Xóa thất bại -_-",
+          text: "Dữ liệu hoàn về ban đầu",
+          icon: "error",
+          timer: 2000
+        })
+      }
+    })
+}
+
+
   return (
     <Routes categories={categories} onAddCate={onHandleAddCate} onRemoveCate={onHandleRemovecate} onUpdateCate={onHandleEditCate}
       products={products} onAddProduct={onHandleAddProduct} onRemoveProduct={onHandleRemoveProduct} onUpdateProduct={onHandleEditPro}
+      users={users} onRemoveUser={onHandleRemoveUser}
+      // postsPerPage={postsPerPage} totalPosts={products.length} paginate={paginate}
     />
   );
 }

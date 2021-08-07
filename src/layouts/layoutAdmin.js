@@ -1,7 +1,4 @@
 import React from 'react'
-import "../assets/admin/plugins/bower_components/chartist/dist/chartist.min.css";
-import "../assets/admin/plugins/bower_components/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.css";
-import "../assets/admin/css/style.min.css";
 import Header from "../components/admin/header";
 import Nav from "../components/admin/nav";
 

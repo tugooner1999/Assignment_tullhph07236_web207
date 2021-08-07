@@ -1,5 +1,6 @@
 import instance from "./instance";
 
+
 export const getAllProduct = () => {
     const url = `/products`;
     return instance.get(url);

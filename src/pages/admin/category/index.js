@@ -29,8 +29,8 @@ const Category = (props) => {
                 </div>
                 <div className="table-responsive col-lg-8" style={{ fontSize: '20px', margin: '0 auto' }}>
                     <table className="table table-striped table-sm ">
-                        <thead>
-                            <tr>
+                        <thead style={{background:'#2f323e'}}>
+                            <tr style={{color:'#fff'}}>
                                 <th scope="col" className="col-1"></th>
                                 <th scope="col" className="col-2">#</th>
                                 <th scope="col">Tên danh mục</th>

@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useHistory, useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { getDetailPro } from "../../../api/productAPI";
+import { getDetailPro, removeProduct } from "../../../api/productAPI";
+import firebase from "../../../firebase";
 
 const UpdateProduct = (props) => {
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
@@ -10,10 +11,10 @@ const UpdateProduct = (props) => {
     const history = useHistory();
 
     const { id } = useParams();
-
     useEffect(() => {
         const getProduct = async () => {
             const { data } = await getDetailPro(id);
+            delete(data.image);
             setProducts(data);
             reset(data);
         }
@@ -21,12 +22,21 @@ const UpdateProduct = (props) => {
     }, [])
 
     const onSubmit = (data) => {
-        const product = {
-            id: id,
-            ...data
-        }
-        props.onUpdateProduct(product);
-        history.push("/admin/products");
+        let file = data.image[0];
+        let storageRef = firebase.storage().ref(`images/${file.name}`);
+        storageRef.put(file).then(function(){
+            storageRef.getDownloadURL().then((url) => {
+                console.log(url);
+                const product = {
+                    id: id,
+                    ...data,
+                    image:url
+                }
+                console.log(product);
+                props.onUpdateProduct(product);
+                history.push("/admin/products");
+            })
+        })
     }
     return (
         <>
@@ -60,6 +70,12 @@ const UpdateProduct = (props) => {
                     {errors.price && errors.price.type === "min" && <span className="d-block text-danger">Giá sản phẩm phải lớn hơn 5000</span>}
                 </div>
                 <div className="mb-3">
+                    <label className="form-label h4">Ảnh sản phẩm</label>
+                    <input type="file" className="form-control" id="product-image" required
+                       {...register("image")} 
+                    />
+                </div>
+                <div className="mb-3">
                     <label className="form-label h4">Danh mục</label>
                     <select className="form-control" {...register("category")}>
                         {
@@ -77,7 +93,7 @@ const UpdateProduct = (props) => {
                 </div>
                 <div className="App">
                     <button className="btn btn-primary" type="submit">
-                        Thêm sản phẩm
+                        Cập nhật
                 </button>
                     <Link
                         to="/admin/products"

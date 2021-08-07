@@ -29,6 +29,12 @@ const Nav = () => {
                                     <span className="hide-menu">Danh mục</span>
                                 </NavLink>
                             </li>
+                            <li className="sidebar-item">
+                                <NavLink to="/admin/users" className="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false">
+                                    <i className=" fas fa-user" aria-hidden="true" />
+                                    <span className="hide-menu">Tài khoản</span>
+                                </NavLink>
+                            </li>
                         </ul>
                     </nav>
                     {/* End Sidebar navigation */}

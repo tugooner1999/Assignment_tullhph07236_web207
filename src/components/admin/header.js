@@ -1,6 +1,17 @@
-import React from 'react'
+import { useEffect, useState } from 'react';
+import { Link, useHistory } from "react-router-dom";
+import { isAuthenticated, signOut } from '../../auth';
+import { useLocation } from "react-router-dom";
 
 const Header = () => {
+    const history = useHistory();
+    const { pathname } = useLocation(); console.log(pathname)
+    const [isLogged, setIsLogged] = useState(false);
+
+    useEffect(() => {
+        isAuthenticated() && setIsLogged(true);
+        console.log(isAuthenticated);
+    }, [pathname, isLogged]);
     return (
         <>
             <header className="topbar" data-navbarbg="skin5">
@@ -49,13 +60,45 @@ const Header = () => {
                                     </a>
                                 </form>
                             </li>
+                            {!isLogged && (
+                                <>
+                                    <div className="navbar-nav" style={{ borderRight: '1px solid #444' }}>
+                                        <div className="nav-item text-nowrap">
+                                            <Link className="nav-link px-3" to="/signup" activeClassName="active" exact>Đăng ký</Link>
+                                        </div>
+                                    </div>
+                                    <div className="navbar-nav" style={{ borderRight: '1px solid #444' }}>
+                                        <div className="nav-item text-nowrap">
+                                            <Link className="nav-link px-3" to="/signin" activeClassName="active" exact>Đăng nhập</Link>
+                                        </div>
+                                    </div>
+                                </>
+                            )}
+
+                            {isLogged && (
+                                <>
+                                    <div className="navbar-nav">
+                                        <div className="nav-item text-nowrap">
+                                            <a className="nav-link px-3" onClick={() => signOut(() => {
+                                                setIsLogged(false);
+                                                history.push("/signin");
+                                            })} href="#">Đăng xuất</a>
+                                        </div>
+                                    </div>
+                                    <div className="navbar-nav">
+                                        <div className="nav-item text-nowrap">
+                                            <a className="nav-link px-3" href="/homepage">Trang chủ</a>
+                                        </div>
+                                    </div>
+                                    <li>
+                                        <a className="profile-pic" href="#">
+                                            {isAuthenticated().user.name}</a>
+                                    </li>
+                                </>
+                            )}
                             {/* ============================================================== */}
                             {/* User profile and search */}
                             {/* ============================================================== */}
-                            <li>
-                                <a className="profile-pic" href="#">
-                                    <img src="../assets/adminLay/images/users/varun.jpg" alt="user-img" width={36} className="img-circle" /><span className="text-white font-medium">Steave</span></a>
-                            </li>
                             {/* ============================================================== */}
                             {/* User profile and search */}
                             {/* ============================================================== */}
